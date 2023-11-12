@@ -1,33 +1,33 @@
-// "use client";
+"use client";
 
-// import {
-//   Box,
-//   Center,
-//   Flex,
-//   Heading,
-//   Text,
-//   SimpleGrid,
-//   Card,
-//   Stack,
-//   Code,
-//   Button,
-//   HStack,
-//   IconButton,
-//   Badge,
-// } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Flex,
+  Heading,
+  Text,
+  SimpleGrid,
+  Card,
+  Stack,
+  Code,
+  Button,
+  HStack,
+  IconButton,
+  Badge,
+} from "@chakra-ui/react";
 
-// import { GlobalContext } from "@/context";
-// import { useContext, useEffect, useState } from "react";
-// import { toast } from "react-toastify";
-// import { productOrdersTitles } from "@/theory";
-// import Toast_Notification from "@/components/toastNotification";
-// import { gettingUserOrder } from "@/services/order/getOrderInfo";
-// import SimpleLoader from "@/components/simpleLoader";
-// import { useParams, useRouter } from "next/navigation";
-// import HashLoader from "react-spinners/HashLoader";
-// import { CldImage } from "next-cloudinary";
+import { GlobalContext } from "@/context";
+import { useContext, useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import { productOrdersTitles } from "@/theory";
+import Toast_Notification from "@/components/toastNotification";
+import { gettingUserOrder } from "@/services/order/getOrderInfo";
+import SimpleLoader from "@/components/simpleLoader";
+import { useParams, useRouter } from "next/navigation";
+import HashLoader from "react-spinners/HashLoader";
+import { CldImage } from "next-cloudinary";
 
-// export default function OrderInfo() {
+export default function OrderInfo() {
 //   const params = useParams();
 //   const router = useRouter();
 //   const [userOrderLoad, setUserOrderLoad] = useState(false);
@@ -64,8 +64,8 @@
 //     retreiveOrder();
 //   }, []);
 
-//   return (
-//     <Box width="100%" pt={10} px={{ base: "20px", lg: "40px" }}>
+  return (
+    <Box width="100%" pt={10} px={{ base: "20px", lg: "40px" }}>
 //       {userOrderLoad ? (
 //         <Center height="80vh">
 //           <HashLoader
@@ -585,6 +585,6 @@
 //         </>
 //       )}
 //       <Toast_Notification />
-//     </Box>
-//   );
-// }
+    </Box>
+  );
+}
