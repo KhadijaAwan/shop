@@ -28,6 +28,12 @@ import HashLoader from "react-spinners/HashLoader";
 import { CldImage } from "next-cloudinary";
 
 export default function OrderInfo() {
+  return (
+    <Box width="100%" pt={10} px={{ base: "20px", lg: "40px" }}>
+      Awan
+    </Box>
+  );
+}
 //   const params = useParams();
 //   const router = useRouter();
 //   const [userOrderLoad, setUserOrderLoad] = useState(false);
@@ -64,8 +70,8 @@ export default function OrderInfo() {
 //     retreiveOrder();
 //   }, []);
 
-  return (
-    <Box width="100%" pt={10} px={{ base: "20px", lg: "40px" }}>
+  // return (
+  //   <Box width="100%" pt={10} px={{ base: "20px", lg: "40px" }}>
 //       {userOrderLoad ? (
 //         <Center height="80vh">
 //           <HashLoader
@@ -585,6 +591,6 @@ export default function OrderInfo() {
 //         </>
 //       )}
 //       <Toast_Notification />
-    </Box>
-  );
-}
+//     </Box>
+//   );
+// }
