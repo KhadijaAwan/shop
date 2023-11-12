@@ -6,8 +6,11 @@ export const getKidsProducts = async () => {
   return clientProducts;
 };
 
-const Kids = async () => {
-  const client = await getKidsProducts();
+let client: any;
+const Kids = () => {
+  getKidsProducts().then((products) => {
+    client = products;
+  });
   return <CardContent data={client && client.data} />;
 };
 
