@@ -1,7 +1,14 @@
 import CardContent from "@/components/cardContent";
 import { gettingCategory } from "../../../services/product/category_product/index";
 
-export default async function Men() {
+export const getMenProducts = async () => {
   const clientProducts = await gettingCategory("men");
-  return <CardContent data={clientProducts && clientProducts.data} />;
-}
+  return clientProducts;
+};
+
+const Men = async () => {
+  const client = await getMenProducts();
+  return <CardContent data={client && client.data} />;
+};
+
+export default Men;
