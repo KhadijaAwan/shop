@@ -7,11 +7,11 @@ export const getKidsProducts = async () => {
 };
 
 let client: any;
-const Kids = () => {
+const page = () => {
   getKidsProducts().then((products) => {
     client = products;
   });
   return <CardContent data={client && client.data} />;
 };
 
-export default Kids;
+export default page;
