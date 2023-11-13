@@ -7,6 +7,7 @@ export const gettingOrders = async (id: any) => {
         const response = await axios.get(`/api/orders/getOrders?id=${id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`,
+                'Cache-Control': 'no-store',
             },
         });
         return response.data;
