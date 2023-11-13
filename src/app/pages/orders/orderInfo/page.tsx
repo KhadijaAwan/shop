@@ -26,6 +26,7 @@ import SimpleLoader from "@/components/simpleLoader";
 import { useParams, useRouter } from "next/navigation";
 import HashLoader from "react-spinners/HashLoader";
 import { CldImage } from "next-cloudinary";
+export const dynamic = "force-dynamic";
 
 export default function OrderInfo() {
   return (
