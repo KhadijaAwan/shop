@@ -24,6 +24,8 @@ import { addingOrder } from "@/services/order/addOrder";
 import { toast } from "react-toastify";
 import Toast_Notification from "@/components/toastNotification";
 
+export const dynamic = "force-dynamic";
+
 export default function Checkout() {
   const router = useRouter();
   const params = useSearchParams();
