@@ -20,6 +20,7 @@ import { gettingAddress } from "@/services/address/get_Address";
 import { deletingAddress } from "@/services/address/delete_Address";
 import { gettingOrders } from "@/services/order/getOrders";
 import HashLoader from "react-spinners/HashLoader";
+export const dynamic = "force-dynamic";
 
 export default function Profile() {
   const [addressLoad, setAddressLoad] = useState(false);
