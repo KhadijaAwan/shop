@@ -3,6 +3,7 @@ import connection from "@/database";
 import Joi from "joi";
 import AuthenticatedUser from "@/middleware/authentication";
 import Cart from "@/models/cart";
+export const revalidate = 0;
 
 const addToCart = Joi.object({
     userId: Joi.string().required(),
