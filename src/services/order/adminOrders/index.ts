@@ -7,6 +7,7 @@ export const gettingAdminOrders = async () => {
         const response = await axios.get("/api/admin/getUsersOrders", {
             headers: {
                 'Authorization': `Bearer ${token}`,
+                'Cache-Control': 'no-store',
             },
         });
         return response.data;
