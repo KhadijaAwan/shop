@@ -4,6 +4,8 @@ import connection from "@/database";
 import AuthenticatedUser from "@/middleware/authentication";
 import Address from "@/models/deliveryAddress";
 
+export const revalidate = 0;
+
 const addAddressSchema = Joi.object({
     clientName: Joi.string().required(),
     country: Joi.string().required(),
