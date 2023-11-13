@@ -2,7 +2,7 @@ import connection from "@/database";
 import { NextResponse } from "next/server";
 import AuthenticatedUser from "@/middleware/authentication";
 import Order from "@/models/orders";
-
+export const revalidate = 0;
 export async function PUT(request: any) {
     try {
         await connection();
