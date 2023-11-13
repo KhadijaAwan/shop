@@ -2,6 +2,7 @@ import connection from "@/database";
 import { NextResponse } from "next/server";
 import AuthenticatedUser from "@/middleware/authentication";
 import Cart from "@/models/cart";
+export const revalidate = 0;
 
 export async function DELETE(request: any) {
     try {
