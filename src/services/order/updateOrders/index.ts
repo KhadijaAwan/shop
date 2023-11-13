@@ -8,6 +8,7 @@ export const updatingAdminOrders = async (updateOrderData: any) => {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`,
+                'Cache-Control': 'no-store',
             },
         });
         return response.data;
