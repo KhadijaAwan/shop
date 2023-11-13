@@ -1,7 +1,7 @@
 import connection from "@/database";
 import Product from "@/models/product";
 import { NextResponse } from "next/server";
-
+export const revalidate = 0;
 export async function GET(request: any) {
     try {
         await connection();
