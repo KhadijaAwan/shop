@@ -2,6 +2,7 @@ import connection from "@/database";
 import AuthenticatedUser from "@/middleware/authentication";
 import Cart from "@/models/cart";
 import { NextResponse } from "next/server";
+export const revalidate = 0;
 
 export async function GET(request: any) {
     try {
