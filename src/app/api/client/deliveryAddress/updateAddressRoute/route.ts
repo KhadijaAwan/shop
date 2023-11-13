@@ -3,6 +3,8 @@ import connection from "@/database";
 import AuthenticatedUser from "@/middleware/authentication";
 import Address from "@/models/deliveryAddress";
 
+export const revalidate = 0;
+
 export async function PUT(request: any) {
     try {
         await connection();
