@@ -19,6 +19,7 @@ import { useContext, useState } from "react";
 import { productOrdersTitles } from "@/theory";
 import Toast_Notification from "@/components/toastNotification";
 import { CldImage } from "next-cloudinary";
+export const dynamic = "force-dynamic";
 
 export default function OrderInfo() {
   const { adminOrderView } = useContext(GlobalContext);
