@@ -1,5 +1,6 @@
 import ProductDetails from "@/components/productDetails";
 import { getProductId } from "@/services/product/id_product";
+export const dynamic = "force-dynamic";
 
 export default async function ProductInfo({ params }: any) {
 }
