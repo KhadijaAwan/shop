@@ -24,6 +24,7 @@ import HashLoader from "react-spinners/HashLoader";
 interface OrdersLoaders {
   [orderId: string]: boolean;
 }
+export const dynamic = "force-dynamic";
 
 export default function AdminPanel() {
   const router = useRouter();
