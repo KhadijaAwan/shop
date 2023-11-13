@@ -24,6 +24,8 @@ interface OrderLoaders {
   [orderId: string]: boolean;
 }
 
+export const dynamic = "force-dynamic";
+
 export default function Orders() {
   const router = useRouter();
   const [orderLoaders, setOrderLoaders] = useState<OrderLoaders>({});
