@@ -2,8 +2,6 @@ import connection from "@/database";
 import Product from "@/models/product";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
-
 export async function GET(request: any) {
     try {
         await connection();
