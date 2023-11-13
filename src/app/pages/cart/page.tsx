@@ -25,6 +25,7 @@ import { addingCartProduct } from "@/services/cart/add_cartProduct";
 import SimpleLoader from "@/components/simpleLoader";
 import HashLoader from "react-spinners/HashLoader";
 import { useRouter } from "next/navigation";
+export const dynamic = "force-dynamic";
 
 export default function Cart() {
   const router = useRouter();
